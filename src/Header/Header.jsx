@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <header className="z-10 px-20 py-5 text-white">
+    <header className="px-20 py-5 text-white">
       <nav className="flex justify-between items-center">
         <h1 className="text-4xl font-serif text-red-600">E-Velocity</h1>
         <ul className="flex gap-10">

@@ -14,14 +14,14 @@ function Background({ count, playStatus }) {
   }
   if (count == 1) {
     return (
-      <div className="absolute -z-10 w-full">
+      <div className="absolute transition ease-linear -z-10 w-full">
         <img src={image1} alt="" className="w-full h-screen object-cover" />
       </div>
     );
   }
   if (count == 2) {
     return (
-      <div className="absolute -z-10 w-full">
+      <div className="absolute  -z-10 w-full">
         <img src={image2} alt="" className="w-full h-screen object-cover" />
       </div>
     );
@@ -33,7 +33,6 @@ function Background({ count, playStatus }) {
       </div>
     );
   }
-  return <div className="absolute -z-10 bg-slate-800 "></div>;
 }
 
 export default Background;
