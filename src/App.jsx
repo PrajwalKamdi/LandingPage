@@ -7,22 +7,17 @@ function App() {
   const [count, setCount] = useState(1);
   const [playStatus, setPlayStatus] = useState(false);
   useEffect(() => {
-      setInterval(() => {
-        if (count == 3) {
-          setCount(1);
-        } else {
-          setCount(count + 1);
-        }
-      }, 3000);
-    });
+    setInterval(() => {
+      if (count == 3) {
+        setCount(1);
+      } else {
+        setCount(count + 1);
+      }
+    }, 10000);
+  });
   return (
     <div className="relative h-screen">
-      <Background
-        count={count}
-        setCount={setCount}
-        playStatus={playStatus}
-        setPlayStatus={setPlayStatus}
-      />
+      <Background count={count} playStatus={playStatus} />
       <Header />
       <Hero playStatus={playStatus} setPlayStatus={setPlayStatus} />
     </div>

@@ -4,7 +4,7 @@ import play_icon from "/src/assets/play_icon.png";
 
 function Hero({ playStatus, setPlayStatus }) {
   return (
-    <div className="z-20 h-screen flex  justify-start  text-white">
+    <div className="z-20  flex  justify-start  text-white">
       <div className="ml-52 mt-24 font-mono rounded-full">
         <p className="text-6xl">Dive into</p>
         <p className="text-6xl">what you love</p>
